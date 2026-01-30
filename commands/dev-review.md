@@ -1,5 +1,4 @@
 ---
-name: dev-review
 description: 代码审查流程，planner 规划 → 执行审查 → 输出报告
 ---
 

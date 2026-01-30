@@ -1,5 +1,6 @@
 {
   "name": "spec-compiler-kit",
+  "version": "1.0.0",
   "description": "规格编译器套件：将模糊需求编译为确定性规格文档，实现'人管变化，AI 写实现'",
   "author": {
     "name": "zxq",
@@ -8,22 +9,18 @@
   "homepage": "https://github.com/zxq/spec-compiler-kit",
   "repository": "https://github.com/zxq/spec-compiler-kit",
   "license": "MIT",
-  "keywords": [
-    "spec",
-    "compiler",
-    "ddd",
-    "modeling",
-    "architecture",
-    "tdd",
-    "documentation",
-    "agile"
-  ],
+  "keywords": ["spec", "compiler", "ddd", "modeling", "architecture", "tdd"],
   "category": "workflow",
-  "tags": [
-    "spec",
-    "ddd",
-    "modeling",
-    "architecture",
-    "tdd"
+  "skills": ["./skills/"],
+  "commands": ["./commands/"],
+  "agents": [
+    "./agents/planner.md",
+    "./agents/senior-domain-architect.md",
+    "./agents/senior-product-manager.md",
+    "./agents/spec-compiler-v3.md",
+    "./agents/java-expert.md",
+    "./agents/ios-expert.md",
+    "./agents/frontend-expert.md",
+    "./agents/tdd-expert.md"
   ]
 }

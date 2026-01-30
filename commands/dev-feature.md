@@ -1,5 +1,4 @@
 ---
-name: dev-feature
 description: 新功能开发完整流程，4 个 Phase，每个阶段强制 planner + 执行 + checkpoint
 ---
 

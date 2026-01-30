@@ -1,5 +1,4 @@
 ---
-name: dev-fix
 description: Bug 修复流程，用例补充 → 推导修复 → 验证，每个阶段强制 planner 控制
 ---
 

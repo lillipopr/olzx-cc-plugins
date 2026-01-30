@@ -1,5 +1,4 @@
 ---
-name: dev-refactor
 description: 代码重构流程，规划重构范围 → 执行 → 验证，每个阶段强制 planner 控制
 ---
 

@@ -1,5 +1,4 @@
 ---
-name: dev-security
 description: 安全审查流程，planner 规划到安全检查到漏洞修复建议
 ---
 

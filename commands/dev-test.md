@@ -1,5 +1,4 @@
 ---
-name: dev-test
 description: 测试相关流程，planner 规划 → 测试生成 → 覆盖率验证
 ---
 

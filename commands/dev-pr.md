@@ -1,5 +1,4 @@
 ---
-name: dev-pr
 description: 创建 Pull Request，分析变更 → 生成摘要 → 创建 PR
 ---
 
