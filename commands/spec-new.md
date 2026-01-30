@@ -38,7 +38,20 @@ Stage 1: PRD → Stage 2: DDD Design → Stage 3: Spec Modeling → Stage 4: Art
 请描述您要开发的功能：
 ```
 
-## 关联
+## 关联的 Agent
 
-- Skill: spec-compiler
-- Workflow: workflows/full-feature.md
+- Stage 1: `agents/senior-product-manager/AGENT.md`
+- Stage 2: `agents/senior-domain-architect/AGENT.md`
+- Stage 3: `agents/senior-domain-architect/AGENT.md` (规格建模部分)
+- Stage 4: `agents/senior-fullstack-engineer/AGENT.md`
+
+## 关联的 Skill
+
+- `skills/for-product-manager/SKILL.md`
+- `skills/for-domain-architect/SKILL.md`
+- `skills/for-spec-modeler/SKILL.md`
+- `skills/for-fullstack-engineer/SKILL.md`
+
+## 关联的 Workflow
+
+- `skills/for-project-manager/workflows/full-feature.md`

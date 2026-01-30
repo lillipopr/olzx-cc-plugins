@@ -30,8 +30,9 @@ description: 规格编译器主入口，智能路由到对应工作流
    - 检测项目类型
    - 确定涉及的端
 
-3. **路由到工作流**
-   - 调用 spec-compiler skill
+3. **路由到对应的 Agent 和 Skill**
+   - 根据场景调用对应的 senior-xxx/AGENT.md
+   - 引用对应的 skills/for-{role}/SKILL.md
    - 执行对应 workflow
 
 ## 场景选择提示

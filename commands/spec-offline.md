@@ -37,7 +37,16 @@ Stage 3: Spec Modeling（标记删除） → Stage 4: Artifact Derivation（逆�
 2. 下线原因
 ```
 
-## 关联
+## 关联的 Agent
 
-- Skill: spec-compiler
-- Workflow: workflows/feature-deprecation.md
+- Stage 3: `agents/senior-domain-architect/AGENT.md` (规格建模部分)
+- Stage 4: `agents/senior-fullstack-engineer/AGENT.md`
+
+## 关联的 Skill
+
+- `skills/for-spec-modeler/SKILL.md`
+- `skills/for-fullstack-engineer/SKILL.md`
+
+## 关联的 Workflow
+
+- `skills/for-project-manager/workflows/feature-deprecation.md`

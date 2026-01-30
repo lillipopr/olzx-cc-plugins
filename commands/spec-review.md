@@ -57,8 +57,14 @@ description: 审查规格文档，检查完整性和一致性
 | 规格建模 | 状态完备性、Bad Case 存在性 |
 | 工件推导 | 契约一致性、位置明确性 |
 
-## 关联
+## 关联的 Agent
 
-- Skill: spec-compiler
-- Workflow: workflows/spec-review.md
-- Agent: spec-review-agent
+- `agents/senior-project-manager/AGENT.md`
+
+## 关联的 Skill
+
+- `skills/for-project-manager/SKILL.md`
+
+## 关联的 Workflow
+
+- `skills/for-project-manager/workflows/spec-review.md`

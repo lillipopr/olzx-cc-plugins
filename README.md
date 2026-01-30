@@ -55,44 +55,48 @@ spec-compiler-kit/
 ├── .claude-plugin/
 │   └── plugin.json              # 插件元数据
 ├── README.md                     # 项目说明
-├── commands/                     # 【用户命令层】面向用户的入口
+├── commands/                     # 【Command 层】用户命令入口
 │   ├── spec.md                  # 主命令（智能路由）
 │   ├── spec-new.md              # 首次功能建设
 │   ├── spec-iter.md             # 功能迭代
 │   ├── spec-fix.md              # Bug 修复
 │   ├── spec-offline.md          # 功能下线
 │   └── spec-review.md           # 规格审查
-├── agents/                       # 【执行代理层】可被 commands 调用的独立代理
-│   ├── spec-prd-agent.md        # PRD 产出代理
-│   ├── spec-ddd-agent.md        # DDD 设计代理
-│   ├── spec-modeling-agent.md   # 规格建模代理
-│   ├── spec-artifact-agent.md   # 工件推导代理
-│   ├── spec-test-agent.md       # 测试生成代理
-│   └── spec-review-agent.md     # 规格审查代理
-├── skills/                       # 【技能库层】共享知识、方法论、模板
-│   └── spec-compiler/           # 规格编译器核心技能
-│       ├── SKILL.md             # 技能入口
-│       ├── rules/               # 核心原则
-│       ├── methodology/         # 方法论文档
-│       ├── workflows/           # 场景工作流
-│       ├── stages/              # 阶段详解
-│       ├── domain/              # 领域特化
-│       └── templates/           # 文档模板
-└── rules/                        # 【架构规范层】通用架构规范
-    └── architecture/
-        ├── java-ddd-layers.md
-        ├── ios-mvvm-layers.md
-        └── vue3-layers.md
+├── agents/                       # 【Agent 层】按角色命名的执行代理
+│   ├── senior-product-manager/  # 资深产品经理
+│   ├── senior-domain-architect/ # 资深领域架构师
+│   ├── senior-fullstack-engineer/ # 资深全栈工程师
+│   ├── senior-test-engineer/    # 资深测试工程师
+│   ├── senior-project-manager/  # 资深项目经理
+│   ├── senior-java-expert/      # Java 后端专家
+│   ├── senior-ios-expert/       # iOS 开发专家
+│   ├── senior-frontend-expert/  # 前端开发专家
+│   └── senior-database-expert/  # 数据库专家
+├── skills/                       # 【Skill 层】按角色配备的知识库
+│   ├── for-product-manager/     # 产品经理知识库
+│   ├── for-domain-architect/    # 领域架构师知识库
+│   ├── for-spec-modeler/        # 规格建模知识库
+│   ├── for-fullstack-engineer/  # 全栈工程师知识库
+│   ├── for-test-engineer/       # 测试工程师知识库
+│   ├── for-project-manager/     # 项目经理知识库
+│   ├── for-java-expert/         # Java 专家知识库
+│   ├── for-ios-expert/          # iOS 专家知识库
+│   ├── for-frontend-expert/     # 前端专家知识库
+│   └── for-database-expert/     # 数据库专家知识库
+└── tools/                        # 【Tools 层】工具封装
+    ├── file-tools/              # 文件操作工具
+    ├── search-tools/            # 搜索工具
+    └── validation-tools/        # 验证工具
 ```
 
 ### 各层职责说明
 
 | 层级 | 目录 | 职责 | 关系 |
 |------|------|------|------|
-| **用户命令层** | `commands/` | 面向用户的 `/spec-*` 命令入口 | 调用 agents 或 skills |
-| **执行代理层** | `agents/` | 独立可复用的 AI 代理 | 被 commands 或 skills 调用 |
-| **技能库层** | `skills/` | 共享方法论、模板、工作流 | 被 agents 引用 |
-| **架构规范层** | `rules/` | 技术栈无关的架构规范 | 跨项目共享 |
+| **Command 层** | `commands/` | 面向用户的 `/spec-*` 命令入口 | 路由到合适的 Agent |
+| **Agent 层** | `agents/` | 实际执行任务、多次 tool 调用、决策、状态管理 | 按角色命名，引用对应 Skill |
+| **Skill 层** | `skills/` | 提供领域知识、方法论、SOP、模板、设计模式、原则 | 按角色配备 |
+| **Tools 层** | `tools/` | 读写文件、搜索、执行命令等 | 主动操作资源 |
 
 ## 使用方式
 

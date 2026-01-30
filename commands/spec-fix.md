@@ -38,7 +38,16 @@ Stage 3: Spec Modeling（补充用例） → Stage 4: Artifact Derivation（推�
 - 期望结果是什么？
 ```
 
-## 关联
+## 关联的 Agent
 
-- Skill: spec-compiler
-- Workflow: workflows/bug-fix.md
+- Stage 3: `agents/senior-domain-architect/AGENT.md` (规格建模部分)
+- Stage 4: `agents/senior-fullstack-engineer/AGENT.md`
+
+## 关联的 Skill
+
+- `skills/for-spec-modeler/SKILL.md`
+- `skills/for-fullstack-engineer/SKILL.md`
+
+## 关联的 Workflow
+
+- `skills/for-project-manager/workflows/bug-fix.md`
