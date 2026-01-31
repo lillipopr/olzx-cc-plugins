@@ -120,7 +120,7 @@
 
 #### 评分计算
 
-见 [scoring/strategic-scoring.md](../scoring/strategic-scoring.md)
+见 [scoring/strategic-scoring.md](../scoring/01-strategic-scoring.md)
 
 #### 及格线
 
@@ -141,7 +141,7 @@
 
 #### 评分计算
 
-见 [scoring/tactical-scoring.md](../scoring/tactical-scoring.md)
+见 [scoring/tactical-scoring.md](../scoring/02-tactical-scoring.md)
 
 #### 及格线
 
@@ -162,7 +162,7 @@
 
 #### 评分计算
 
-见 [scoring/constraint-scoring.md](../scoring/constraint-scoring.md)
+见 [scoring/constraint-scoring.md](../scoring/03-constraint-scoring.md)
 
 #### 及格线
 
@@ -183,7 +183,7 @@
 
 #### 评分计算
 
-见 [scoring/usecase-scoring.md](../scoring/usecase-scoring.md)
+见 [scoring/usecase-scoring.md](../scoring/04-use-case-scoring.md)
 
 #### 及格线
 
@@ -331,7 +331,7 @@
 ## 附录：评分标准
 
 各部分详细评分标准参见：
-- [战略设计评分标准](../scoring/strategic-scoring.md)
+- [战略设计评分标准](../scoring/01-strategic-scoring.md)
 - [战术设计评分标准](../scoring/tactical-scoring.md)
 - [约束定义评分标准](../scoring/constraint-scoring.md)
 - [用例设计评分标准](../scoring/usecase-scoring.md)

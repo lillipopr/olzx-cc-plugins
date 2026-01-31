@@ -57,10 +57,10 @@ description: 资深领域架构师，负责将 PRD 文档转化为完整的《�
 
 | 文件 | 对应部分 | 满分 | 权重 |
 |------|----------|------|------|
-| [scoring/strategic-scoring.md](scoring/strategic-scoring.md) | 战略设计 | 100 | 20% |
-| [scoring/tactical-scoring.md](scoring/tactical-scoring.md) | 战术设计 | 100 | 30% |
-| [scoring/constraint-scoring.md](scoring/constraint-scoring.md) | 约束定义 | 100 | 25% |
-| [scoring/usecase-scoring.md](scoring/usecase-scoring.md) | 用例设计 | 100 | 25% |
+| [scoring/strategic-scoring.md](scoring/01-strategic-scoring.md) | 战略设计 | 100 | 20% |
+| [scoring/tactical-scoring.md](scoring/02-tactical-scoring.md) | 战术设计 | 100 | 30% |
+| [scoring/constraint-scoring.md](scoring/03-constraint-scoring.md) | 约束定义 | 100 | 25% |
+| [scoring/usecase-scoring.md](scoring/04-use-case-scoring.md) | 用例设计 | 100 | 25% |
 
 ### 检查清单（每部分完成后自检）
 
@@ -97,7 +97,7 @@ description: 资深领域架构师，负责将 PRD 文档转化为完整的《�
 | [patterns/ddd-patterns.md](patterns/ddd-patterns.md) | DDD 战略设计模式 |
 | [patterns/tactical-patterns.md](patterns/tactical-patterns.md) | DDD 战术设计模式 |
 
-### 模板
+### 输出模板
 
 | 文件 | 说明 |
 |------|------|
@@ -114,12 +114,6 @@ description: 资深领域架构师，负责将 PRD 文档转化为完整的《�
 | 状态机建模 | David Harel | 状态图在软件设计中的应用 |
 | 约束优先级 | Michael Jackson | 问题框架方法 |
 
-### 跨端一致性原则
-
-- **第一部分（战略设计）**：跨端唯一
-- **第二部分（战术设计）**：跨端唯一（建模不绑定具体技术栈）
-- **第三部分（约束定义）**：跨端一致（伪代码不绑定语言）
-- **第四部分（用例设计）**：跨端一致（相同用例，各端验证）
 
 ### 设计质量标准
 
@@ -129,23 +123,3 @@ description: 资深领域架构师，负责将 PRD 文档转化为完整的《�
 2. **符合最佳实践**：与业内公认的设计模式一致
 3. **可验证**：每个约束可写成 assert，每个用例可转化为测试
 4. **可追溯**：设计决策可追溯到 PRD 需求
-
-## 支持的架构
-
-- 后端 DDD 分层（Controller → Application → Domain → Gateway/Infra → Mapper）
-- 移动端 MVVM 分层（View → ViewModel → Service → Gateway → Network）
-- Vue 3 前端分层（View → Composable → Service → API → Request）
-
-## 版本历史
-
-### v4.1（当前版本）
-- 新增完整的评分标准体系（4 个部分独立评分）
-- 新增工作流程 SOP（sop-document-workflow.md）
-- 新增 strategic-checklist 和 tactical-checklist
-- 建立 90 分及格线机制
-- 删除空目录（design-patterns, domain-knowledge, stages）
-
-### v4.0
-- 整合了 spec-compiler-v4 的 Phase 1-3（问题建模、约束定义、用例设计）
-- 新增约束定义 SOP 和用例设计 SOP
-- 新增不变量原则、约束检查清单、用例检查清单

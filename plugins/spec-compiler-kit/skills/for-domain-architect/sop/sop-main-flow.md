@@ -76,7 +76,7 @@
 
 #### Step 2：战略设计
 
-详细步骤见 [sop-strategic-design.md](sop-strategic-design.md)
+参考文档：[methodology/business-capability.md](../methodology/business-capability.md)、[methodology/bounded-context.md](../methodology/bounded-context.md)、[methodology/context-mapping.md](../methodology/context-mapping.md)
 
 1. **业务能力分析**
    - 识别业务能力
@@ -95,7 +95,7 @@
 
 #### Step 3：战术设计
 
-详细步骤见 [sop-tactical-design.md](sop-tactical-design.md)
+参考文档：[methodology/entity-extraction.md](../methodology/entity-extraction.md)、[methodology/aggregate-design.md](../methodology/aggregate-design.md)、[methodology/domain-event.md](../methodology/domain-event.md)
 
 1. **聚合设计**
    - 识别聚合根
@@ -154,7 +154,7 @@
 - [战略设计检查清单](../checklists/strategic-checklist.md)
 - [战术设计检查清单](../checklists/tactical-checklist.md)
 - [约束检查清单](../checklists/constraint-checklist.md)
-- [用例检查清单](../checklists/use-case-checklist.md)
+- [用例检查清单](../checklists/usecase-checklist.md)
 
 #### Step 8：等待用户 Review
 
@@ -280,26 +280,30 @@
 ## 支持文档
 
 ### SOP 文档
-- [战略设计 SOP](sop-strategic-design.md)
-- [战术设计 SOP](sop-tactical-design.md)
 - [约束定义 SOP](sop-constraints.md)
 - [用例设计 SOP](sop-use-cases.md)
 
 ### 方法论文档
 - [实体抽取方法论](../methodology/entity-extraction.md)
-- [状态空间设计](../methodology/state-space-design.md)
-- [不变量定义](../methodology/invariants.md)
+- [业务能力分析](../methodology/business-capability.md)
+- [限界上下文划分](../methodology/bounded-context.md)
+- [聚合设计](../methodology/aggregate-design.md)
+- [上下文映射](../methodology/context-mapping.md)
+- [领域事件](../methodology/domain-event.md)
+- [值对象设计](../methodology/vo-design.md)
 
 ### 原则文档
 - [DDD 核心原则](../principles/ddd-principles.md)
 - [聚合设计原则](../principles/aggregate-principles.md)
 - [不变量原则](../principles/invariant-principles.md)
+- [领域建模原则](../principles/modeling-principles.md)
 
 ### 检查清单
 - [战略设计检查清单](../checklists/strategic-checklist.md)
 - [战术设计检查清单](../checklists/tactical-checklist.md)
 - [约束检查清单](../checklists/constraint-checklist.md)
-- [用例检查清单](../checklists/use-case-checklist.md)
+- [用例检查清单](../checklists/usecase-checklist.md)
+- [最终审查清单](../checklists/review-checklist.md)
 
 ### 模板
 - [领域设计文档模板](../templates/domain-design-template.md)

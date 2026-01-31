@@ -182,4 +182,4 @@ DDD 将行为根据其性质和跨度，分配到不同的层级中：
 
 ---
 
-**下一步** → [Phase 1: 问题建模](../02-compilation-phases/phase-1-modeling.md)
+**下一步** → 参见 [sop/sop-main-flow.md](../sop/sop-main-flow.md) 继续设计流程

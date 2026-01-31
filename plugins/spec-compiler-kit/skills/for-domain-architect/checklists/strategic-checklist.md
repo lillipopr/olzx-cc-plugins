@@ -1,6 +1,6 @@
 # 战略设计检查清单
 
-> **对应评分标准**：[strategic-scoring.md](../scoring/strategic-scoring.md)
+> **对应评分标准**：[strategic-scoring.md](../scoring/01-strategic-scoring.md)
 > **满分**：100 分
 > **及格分**：60 分
 
@@ -186,4 +186,4 @@
 
 ### 改进建议
 
-根据低分项，参考 [strategic-scoring.md](../scoring/strategic-scoring.md) 中的改进建议进行优化。
+根据低分项，参考 [strategic-scoring.md](../scoring/01-strategic-scoring.md) 中的改进建议进行优化。

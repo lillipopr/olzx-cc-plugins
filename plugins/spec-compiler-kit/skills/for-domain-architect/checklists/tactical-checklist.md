@@ -1,6 +1,6 @@
 # 战术设计检查清单
 
-> **对应评分标准**：[tactical-scoring.md](../scoring/tactical-scoring.md)
+> **对应评分标准**：[tactical-scoring.md](../scoring/02-tactical-scoring.md)
 > **满分**：100 分
 > **及格分**：60 分
 > **权重**：30%（最高权重）
@@ -272,7 +272,7 @@
 
 ### 改进建议
 
-根据低分项，参考 [tactical-scoring.md](../scoring/tactical-scoring.md) 中的改进建议进行优化。
+根据低分项，参考 [tactical-scoring.md](../scoring/02-tactical-scoring.md) 中的改进建议进行优化。
 
 **重点关注**（权重最高）：
 - 聚合设计（25 分）
