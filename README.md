@@ -57,15 +57,15 @@
 ### Marketplace 结构（支持 `/plugin marketplace add`）
 
 ```
-spec-compiler-kit/
+spec-compiler/
 ├── .claude-plugin/               # Marketplace 配置
-│   ├── marketplace.json         # Marketplace 配置（source: "./plugins/spec-compiler-kit"）
+│   ├── marketplace.json         # Marketplace 配置（source: "./plugins/spec-compiler"）
 │   ├── README.md                # 插件开发指南
 │   ├── HOOKS.md                 # Hooks 开发规范
 │   ├── VERSIONING.md            # 版本管理规范
 │   └── PUBLISHING.md            # 发布流程指南
 ├── plugins/                      # 【必需】Marketplace 插件目录
-│   └── spec-compiler-kit/       # 插件子目录（source 指向这里）
+│   └── spec-compiler/       # 插件子目录（source 指向这里）
 │       ├── .claude-plugin/
 │       │   ├── plugin.json      # 插件元数据（v2.0 规范）
 │       │   ├── hooks/           # Hooks 配置目录
@@ -133,25 +133,21 @@ spec-compiler-kit/
 
 ```bash
 # 添加 Marketplace
-/plugin marketplace add https://github.com/lillipopr/spec-compiler-kit
+/plugin marketplace add https://github.com/lillipopr/spec-compiler
 
 # 安装插件
-/plugin install spec-compiler-kit
+/plugin install spec-compiler
 ```
 
 #### 方式二：本地符号链接（推荐用于开发）
 
 ```bash
 # 克隆仓库
-git clone https://github.com/lillipopr/spec-compiler-kit ~/spec-compiler-kit
+git clone https://github.com/lillipopr/spec-compiler ~/spec-compiler
 
-# 执行安装脚本（自动创建符号链接）
-cd ~/spec-compiler-kit
-./install.sh
-
-# 或手动创建符号链接（指向 plugins/spec-compiler-kit 子目录）
+# 或手动创建符号链接（指向 plugins/spec-compiler 子目录）
 mkdir -p ~/.claude/plugins/local
-ln -s ~/spec-compiler-kit/plugins/spec-compiler-kit ~/.claude/plugins/local/spec-compiler-kit
+ln -s ~/spec-compiler/plugins/spec-compiler ~/.claude/plugins/local/spec-compiler
 
 # 重启 Claude Code 后自动加载
 ```
@@ -244,7 +240,7 @@ ln -s ~/spec-compiler-kit/plugins/spec-compiler-kit ~/.claude/plugins/local/spec
 违规: com.example.mapper.UserMapper (Controller 只能调用 Application)
 ```
 
-> 详细说明请参考 [Hooks 使用指南](plugins/spec-compiler-kit/.claude-plugin/scripts/hooks/README.md)
+> 详细说明请参考 [Hooks 使用指南](plugins/spec-compiler/.claude-plugin/scripts/hooks/README.md)
 
 ## 核心原则
 
@@ -336,7 +332,7 @@ Stage N 完成 → 输出产出物 → 提醒用户 Review → 等待确认 → 
 |------|------|
 | [插件开发指南](.claude-plugin/README.md) | 插件架构、组件说明、开发工作流 |
 | [Hooks 开发规范](.claude-plugin/HOOKS.md) | Hook 类型、编写规范、最佳实践 |
-| [Hooks 使用指南](plugins/spec-compiler-kit/.claude-plugin/scripts/hooks/README.md) | Hook 脚本使用、配置、调试 |
+| [Hooks 使用指南](plugins/spec-compiler/.claude-plugin/scripts/hooks/README.md) | Hook 脚本使用、配置、调试 |
 | [版本管理规范](.claude-plugin/VERSIONING.md) | 版本号格式、发布流程、升级指南 |
 | [发布流程指南](.claude-plugin/PUBLISHING.md) | 发布方式、Marketplace 配置、更新流程 |
 | [变更记录](CHANGELOG.md) | 版本历史、功能变更、迁移指南 |

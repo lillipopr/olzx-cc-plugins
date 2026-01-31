@@ -1,6 +1,6 @@
 # Hooks 可执行化实现
 
-本目录包含 spec-compiler-kit 插件的可执行 Hook 脚本。
+本目录包含 spec-compiler 插件的可执行 Hook 脚本。
 
 ## 文件结构
 

@@ -318,8 +318,3 @@ A: 在对应的 `pre-tool-use/` 或 `post-tool-use/` 目录创建 Hook 文件，
 
 A: Hook 可以访问工具调用的上下文，包括文件路径、编辑内容、会话状态等。
 
-## 相关文档
-
-- [README.md](./README.md) - 插件开发指南
-- [VERSIONING.md](./VERSIONING.md) - 版本管理规范
-- [PUBLISHING.md](./PUBLISHING.md) - 发布流程指南

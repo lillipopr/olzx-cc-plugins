@@ -8,13 +8,13 @@
   },
   "plugins": [
     {
-      "name": "spec-compiler-kit",
+      "name": "spec-compiler",
       "description": "规格编译器套件：将模糊需求编译为确定性规格文档，实现'人管变化，AI 写实现'",
       "author": {
         "name": "zxq",
         "email": "zxq@olzx-ai.com"
       },
-      "source": "./plugins/spec-compiler-kit",
+      "source": "./plugins/spec-compiler",
       "category": "workflow",
       "homepage": "https://github.com/lillipopr/spec-compiler-kit"
     }

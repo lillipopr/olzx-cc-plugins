@@ -1,5 +1,5 @@
 {
-  "description": "Hooks for spec-compiler-kit plugin: Phase review check and architecture layer validation",
+  "description": "Hooks for spec-compiler plugin: Phase review check and architecture layer validation",
   "hooks": {
     "PreToolUse": [
       {
