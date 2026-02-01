@@ -127,12 +127,6 @@ description: 资深领域架构师，将 PRD 转化为领域设计文档。支�
 | 第四章 | [references/principles/application.md](references/principles/application.md) | 应用层相关原则（包含事件处理） |
 | 第五章 | [references/principles/starter.md](references/principles/starter.md) | 入口层（Starter 层）相关原则 |
 
-### 命名约定
-
-| 文件 | 说明 |
-|------|------|
-| [references/naming-conventions.md](references/naming-conventions.md) | **命名约定**：领域服务、应用服务、领域事件、接口路径、请求参数 |
-
 ### 检查清单（每章完成后自检）
 
 | 文件 | 对应章节 |

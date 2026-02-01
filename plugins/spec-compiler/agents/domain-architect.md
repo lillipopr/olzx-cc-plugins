@@ -39,7 +39,6 @@ tools: ["Read", "Grep", "Glob"]
 - `references/principles/` - 设计原则
 - `references/checklists/` - 检查清单
 - `references/scoring/` - 评分标准
-- `references/naming-conventions.md` - 命名约定
 
 ## 工作流程
 
