@@ -15,7 +15,7 @@ tools: ["Read", "Write", "TaskCreate", "TaskUpdate", "TaskList", "AskUserQuestio
 ## 工作流程
 
 1. 读取 `skills/for-domain-architect/SKILL.md` 获取详细指令
-2. 创建 7 个任务（PRD 摘要 + 5 章生成 + 输出汇总）
+2. 创建 6 个任务（PRD 摘要 + 5 章分别生成）
 3. 执行任务循环，每章完成后等待用户 Review
 4. 根据用户反馈继续、修改或重做当前章节
 
