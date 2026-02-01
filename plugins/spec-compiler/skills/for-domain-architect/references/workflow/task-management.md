@@ -6,23 +6,7 @@
 
 ## 为什么需要 Task 管理
 
-### 问题分析
-
-| 问题 | 说明 | 影响 |
-|------|------|------|
-| **步骤遗漏** | 手动执行容易漏步骤 | 质量问题 |
-| **进度不透明** | 不知道执行到哪 | 焦虑 |
-| **依赖混乱** | 任务顺序错误 | 报错 |
-| **重试困难** | 失败后不知道从哪开始 | 效率低 |
-
-### Task 管理的优势
-
-| 优势 | 说明 | 效果 |
-|------|------|------|
-| **不遗漏** | 每个步骤都是 Task | 保证完整 |
-| **进度可见** | 实时显示任务状态 | 透明 |
-| **依赖管理** | 自动处理依赖顺序 | 正确 |
-| **失败重试** | 精确重试单个任务 | 高效 |
+Task 管理解决步骤遗漏、进度不透明、依赖混乱的问题：每个步骤都是 Task，保证不遗漏；实时显示状态，进度透明；自动管理依赖，精确重试提高效率。
 
 ---
 
@@ -437,104 +421,14 @@ function executeTask(task) {
 
 ---
 
-## Task 持久化
+## 实现细节
 
-### 文件结构
+**Task 持久化和错误处理的详细实现**请参考：[task-implementation-details.md](./task-implementation-details.md)
 
-```
-output/
-├── tasks.json              # 任务列表和状态
-├── task-history.json       # 任务执行历史
-├── task-errors.json        # 错误记录
-```
-
-### tasks.json 格式
-
-```json
-{
-  "tasks": [
-    {
-      "id": "T1",
-      "subject": "PRD 分析与摘要",
-      "status": "completed",
-      "startTime": "2024-02-01T10:00:00Z",
-      "endTime": "2024-02-01T10:05:00Z",
-      "retryCount": 0
-    }
-  ],
-  "currentTaskId": "T6",
-  "progress": {
-    "completed": 5,
-    "inProgress": 1,
-    "pending": 15
-  }
-}
-```
-
-### task-history.json 格式
-
-```json
-{
-  "history": [
-    {
-      "taskId": "T2",
-      "attempt": 1,
-      "startTime": "2024-02-01T10:06:00Z",
-      "endTime": "2024-02-01T10:10:00Z",
-      "result": "completed",
-      "outputFiles": [
-        "output/chapter-01-v1.md",
-        "output/chapter-01-issues-principles.md"
-      ]
-    }
-  ]
-}
-```
-
----
-
-## 错误处理
-
-### 错误类型
-
-| 错误类型 | 说明 | 处理方式 |
-|---------|------|----------|
-| **文件不存在** | 输入文件缺失 | 中止任务，提示用户 |
-| **解析错误** | 文件格式错误 | 中止任务，记录错误 |
-| **质量不达标** | 未通过质量关卡 | 重试（最多 3 次） |
-| **用户取消** | 用户主动取消 | 标记为 cancelled |
-
-### 错误恢复
-
-```
-function handleError(task, error) {
-  // 记录错误
-  logError(task.id, error);
-
-  // 根据错误类型处理
-  switch (error.type) {
-    case 'FILE_NOT_FOUND':
-      // 文件缺失，提示用户
-      return { action: 'abort', message: `文件 ${error.file} 不存在` };
-
-    case 'PARSE_ERROR':
-      // 解析错误，提示用户
-      return { action: 'abort', message: `文件 ${error.file} 格式错误` };
-
-    case 'QUALITY_GATE_FAILED':
-      // 质量不达标，重试
-      if (task.retryCount < task.qualityGate.maxRetries) {
-        return { action: 'retry', message: '重试中...' };
-      } else {
-        return { action: 'fail', message: '达到最大重试次数' };
-      }
-
-    case 'USER_CANCELLED':
-      // 用户取消
-      return { action: 'cancel', message: '用户取消' };
-  }
-}
-```
+包含内容：
+- tasks.json 和 task-history.json 格式定义
+- 错误类型和处理逻辑
+- 错误恢复代码示例
 
 ---
 

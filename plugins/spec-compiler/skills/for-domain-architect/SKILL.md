@@ -111,11 +111,7 @@ description: 资深领域架构师，将 PRD 转化为领域设计文档。支�
 | 文件 | 说明 | 优先级 |
 |------|------|--------|
 | [references/workflow/README.md](references/workflow/README.md) | **工作流索引**：快速导航和常见问题 | ⭐⭐⭐ |
-| [references/workflow/task-based-workflow.md](references/workflow/task-based-workflow.md) | **Task 工具工作流**：任务拆分与执行 | ⭐⭐⭐ |
 | [references/workflow/context-optimization.md](references/workflow/context-optimization.md) | **上下文优化**：避免上下文撑爆 | ⭐⭐⭐ |
-| [references/workflow/workflow-generation.md](references/workflow/workflow-generation.md) | 生成流程：从 PRD 到领域设计文档 | ⭐⭐ |
-| [references/workflow/workflow-evaluation.md](references/workflow/workflow-evaluation.md) | 评估流程：章节评分 + 综合评分 | ⭐⭐ |
-| [references/workflow/workflow-modification.md](references/workflow/workflow-modification.md) | 修改流程：基于反馈的迭代修改 | ⭐⭐ |
 
 ### 设计原则（按章节分类）
 
