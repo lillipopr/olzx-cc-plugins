@@ -454,7 +454,7 @@ async {方法名}(cmd: {Command类型}): Promise<{Result类型}>
 
 ### 评分标准
 
-使用 [references/scoring/strategic-scoring.md](references/scoring/strategic-scoring.md) 评分。
+使用 [references/scoring/chapter-04-scoring.md](references/scoring/chapter-04-scoring.md) 评分。
 
 **及格线**：60 分
 
