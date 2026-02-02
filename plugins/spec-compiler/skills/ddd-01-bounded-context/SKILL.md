@@ -1,5 +1,5 @@
 ---
-name: bounded-context-designer
+name: ddd-01-bounded-context-skill
 description: 根据 PRD 生成领域架构-限界上下文设计文档。支持两阶段工作流：先生成大纲版进行讨论优化，定稿后生成详细版。当用户需要从 PRD 进行限界上下文划分、业务能力分析、上下文映射设计时触发。
 ---
 
