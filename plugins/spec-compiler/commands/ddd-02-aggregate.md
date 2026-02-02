@@ -5,7 +5,7 @@ calls-skill: spec-compiler:ddd-02-aggregate
 
 # /ddd-02-aggregate - 聚合设计命令
 
-此命令调用 **ddd-02-aggregate-skill** Skill，从限界上下文设计文档生成聚合设计文档。
+此命令调用 **ddd-02-aggregate** Skill，从限界上下文设计文档生成聚合设计文档。
 
 ## 使用场景
 
